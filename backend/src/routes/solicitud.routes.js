@@ -3,27 +3,27 @@ const router = express.Router();
 
 // GET /api/solicitudes — disponibles (técnico)
 router.get('/', (req, res) => {
-  res.json({ message: 'Listar solicitudes disponibles — implementar en S5' });
+  res.status(501).json({ error: 'Endpoint no implementado' });
 });
 
 // POST /api/solicitudes — crear (cliente)
 router.post('/', (req, res) => {
-  res.json({ message: 'Crear solicitud — implementar en S5' });
+  res.status(501).json({ error: 'Endpoint no implementado' });
 });
 
 // GET /api/solicitudes/mias — mis solicitudes (cliente)
 router.get('/mias', (req, res) => {
-  res.json({ message: 'Mis solicitudes — implementar en S5' });
+  res.status(501).json({ error: 'Endpoint no implementado' });
 });
 
 // PATCH /api/solicitudes/:id/aceptar (técnico)
 router.patch('/:id/aceptar', (req, res) => {
-  res.json({ message: 'Aceptar solicitud — implementar en S6' });
+  res.status(501).json({ error: 'Endpoint no implementado' });
 });
 
 // PATCH /api/solicitudes/:id/rechazar (técnico)
 router.patch('/:id/rechazar', (req, res) => {
-  res.json({ message: 'Rechazar solicitud — implementar en S6' });
+  res.status(501).json({ error: 'Endpoint no implementado' });
 });
 
 module.exports = router;

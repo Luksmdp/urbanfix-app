@@ -14,7 +14,6 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-// Routes (las vamos a conectar en las próximas semanas)
 const apiRoutes = require('./routes');
 app.use('/api', apiRoutes);
 
